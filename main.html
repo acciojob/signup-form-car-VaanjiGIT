@@ -1,74 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Signup Form</title>
+	<h1>Signup Form</h1>
 </head>
 <body>
 
-<h2>Signup Form</h2>
+	<from method="post">
 
-<form method="post">
+		<!--Name-->
+		<label for = "name">Name:</label>
+		<input type="text" id="name" placeholder="Name" required>
+		<br><br>
 
-    <!-- Name -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" placeholder="Name" required>
-    <br><br>
+		<!--Email-->
+		<label for ="email">Email:</label>
+		<input type="email" id="name" placeholder="Email" required>
+		<br><br>
 
-    <!-- Email -->
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Email" required>
-    <br><br>
+		<!--Gender-->
+		<label>Gender:</label>
+		<label for = "gender_m">Male</label>
+		<input type="radio" id="gender_m" name="gender" required>
 
-    <!-- Gender -->
-    <label for="gender_m">Gender:</label>
-    <input type="radio" id="gender_m" name="gender" required>
-    <label for="gender_m">Male</label>
+		<label for="gender_f">Female</label>
+		<input type="radio" id="gender_f" name="gender" required>
+		<br><br>
 
-    <input type="radio" id="gender_f" name="gender" required>
-    <label for="gender_f">Female</label>
-    <br><br>
+		<!--Car Brands-->
+		<label for="cars">Cars Brands:</label>
+		<select id="cars" required>
+			<option value="">--Please choose an option</option>
+			<option value="bmw">BMW</option>
+			<option value="tata">TATA</option>
+			<option value="mahindra">Mahindra</option>
+			<option value="maruti">Maruti</option>
+		</select>
+		<br><br>
 
-    <!-- Car Brands -->
-    <label for="cars">Car Brands:</label>
-    <select id="cars" required>
-        <option value="">--Please choose an option--</option>
-        <option value="toyota">Toyota</option>
-        <option value="bmw">BMW</option>
-        <option value="audi">Audi</option>
-        <option value="honda">Honda</option>
-    </select>
-    <br><br>
+		<!-- Age -->
+		<label for="age">Age:</label>
+		<input type="number" id="age" placeholder="Age" required>
+		<br><br>
 
-    <!-- Age -->
-    <label for="age">Age:</label>
-    <input type="number" id="age" placeholder="Age" required>
-    <br><br>
+		<!--Dob-->
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" required>
+		<br><br>
 
-    <!-- DOB -->
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" required>
-    <br><br>
+		<!--Phone Number-->
+		<lable for="tel">Phone Number:</lable>
+		<input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
+		<br><br>
 
-    <!-- Phone Number -->
-    <label for="tel">Phone Number:</label>
-    <input type="tel" id="tel" placeholder="xxx-xxx-xxxx">
-    <br><br>
+		<!-- Password -->
+		<label for="password">Password:</label>
+		<input type="password" id="password" placeholder="Password" required>
+		<br><br>
 
-    <!-- Password -->
-    <label for="password">Password:</label>
-    <input type="password" id="password" placeholder="Password" required>
-    <br><br>
+		<!-- TOS-->
+		<label for="tos">I agree to the TOS</label>
+		<input type="checkbox" id="tos" required>
+		<br><br>
+		
+		<!-- Submit Button-->
+		<button type="submit">Submit</button>
 
-    <!-- TOS -->
-    <input type="checkbox" id="tos" required>
-    <label for="tos">I agree to the TOS</label>
-    <br><br>
-
-    <!-- Submit -->
-    <button type="submit">Submit</button>
-
-</form>
-
+	</from>	
 </body>
 </html>
